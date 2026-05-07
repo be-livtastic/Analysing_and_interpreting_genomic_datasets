@@ -1,0 +1,102 @@
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+__MACOSX/
+archive/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+.python-version
+.venv/
+venv/
+env/
+ENV/
+.ipynb_checkpoints/
+
+# Dependency and build artifacts
+build/
+dist/
+*.egg-info/
+.coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Conda and installers
+miniconda/
+anaconda/
+*.sh
+
+# Sequencing input data
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.fastqz
+*.fqz
+
+# Alignment and variant calling outputs
+*.sam
+*.bam
+*.bai
+*.cram
+*.crai
+*.vcf
+*.bcf
+*.tbi
+*.csi
+
+# Reference and index files
+*.fasta
+*.fa
+*.fna
+*.fasta.gz
+*.fa.gz
+*.dict
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
+
+# Quality control and report outputs
+*.fastqc.html
+*.fastqc.zip
+*.multiqc.html
+multiqc_report.html
+multiqc_data/
+*.html
+*.json
+*.log
+logs/
+
+# Generic tabular/text outputs from pipelines
+*.csv
+*.tsv
+*.txt
+*.bed
+*.wig
+*.bigwig
+*.bw
+*.bedgraph
+
+# Archives and compressed packages
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Keep source and config files tracked by default
+!*.py
+!*.yml
+!*.yaml
