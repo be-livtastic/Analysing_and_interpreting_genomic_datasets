@@ -5,12 +5,12 @@
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 
-#Set Up Conda Channels
+# Set Up Conda Channels
 conda config --add channels conda-forge
 conda config --add channels bioconda
 conda config --add channels defaults
 
-#Install Docker external apt repo for Ubuntu by running the following commands in your terminal:
+# Install Docker external apt repo for Ubuntu by running the following commands in your terminal:
 # For Docker installation, run this line by line
 
 # DOCKER INSTALL (Ubuntu/WSL)
@@ -50,18 +50,18 @@ docker run hello-world
 #Create Nextflow Environment and Install Nextflow (version 23.10.1)
 conda create -n nextflow -c bioconda nextflow=23.10.1 -y
 
-#Activate Nextflow Environment
+# Activate Nextflow Environment
 conda activate nextflow
 
-#Check Nextflow Installation
+# Check Nextflow Installation
 nextflow -version
 
-#Activate MOOC Environment
+# Activate MOOC Environment
 conda activate MOOC
 
 
 wget -L https://raw.githubusercontent.com/nf-core/viralrecon/master/bin/fastq_dir_to_samplesheet.py #Download the fastq_dir_to_samplesheet.py script from the nf-core/viralrecon 
-#repository on GitHub. This script is used to convert a directory of FASTQ files into a samplesheet format that can be used by the viralrecon pipeline.
+# repository on GitHub. This script is used to convert a directory of FASTQ files into a samplesheet format that can be used by the viralrecon pipeline.
 chmod +x fastq_dir_to_samplesheet.py #Make the downloaded script executable.
 
 python3 fastq_dir_to_samplesheet.py data samplesheet.csv -r1 _1.fastq.gz -r2 _2.fastq.gz #Run the fastq_dir_to_samplesheet.py script, 
@@ -96,9 +96,9 @@ nextflow run nf-core/viralrecon -r 2.6.0 -profile docker \
 cd results/viralrecon
 ls
 
-#check the multiqc report to see the summary of the results
+# check the multiqc report to see the summary of the results
 open multiqc_report.html
 
-du -sh work/* #Check the disk usage of the work directory to see how much space is being used by the intermediate files generated during the viralrecon pipeline execution.
-rm -rf work/* #Remove the intermediate files in the work directory to free up disk space after confirming that the results have been successfully generated and are stored 
+du -sh work/* # Check the disk usage of the work directory to see how much space is being used by the intermediate files generated during the viralrecon pipeline execution.
+rm -rf work/* # Remove the intermediate files in the work directory to free up disk space after confirming that the results have been successfully generated and are stored 
 # in the results/viralrecon directory.
