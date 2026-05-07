@@ -1,0 +1,56 @@
+id: 'nf-core-viralrecon-summary'
+description: ' - this information is collected when the pipeline is started.'
+section_name: 'nf-core/viralrecon Workflow Summary'
+section_href: 'https://github.com/nf-core/viralrecon'
+plot_type: 'html'
+data: |
+    <p style="font-size:110%"><b>Core Nextflow options</b></p>
+    <dl class="dl-horizontal">
+        <dt>revision</dt><dd><samp>2.6.0</samp></dd>
+        <dt>runName</dt><dd><samp>dreamy_brazil</samp></dd>
+        <dt>containerEngine</dt><dd><samp>docker</samp></dd>
+        <dt>launchDir</dt><dd><samp>/mnt/c/Users/bless/Downloads/Analysing_and_interpreting_genomic_datasets</samp></dd>
+        <dt>workDir</dt><dd><samp>/mnt/c/Users/bless/Downloads/Analysing_and_interpreting_genomic_datasets/work</samp></dd>
+        <dt>projectDir</dt><dd><samp>/home/belivtastic/.nextflow/assets/nf-core/viralrecon</samp></dd>
+        <dt>userName</dt><dd><samp>belivtastic</samp></dd>
+        <dt>profile</dt><dd><samp>docker</samp></dd>
+        <dt>configFiles</dt><dd><samp>/home/belivtastic/.nextflow/assets/nf-core/viralrecon/nextflow.config</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Input/output options</b></p>
+    <dl class="dl-horizontal">
+        <dt>input</dt><dd><samp>samplesheet.csv</samp></dd>
+        <dt>platform</dt><dd><samp>illumina</samp></dd>
+        <dt>protocol</dt><dd><samp>amplicon</samp></dd>
+        <dt>outdir</dt><dd><samp>results/viralrecon</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Reference genome options</b></p>
+    <dl class="dl-horizontal">
+        <dt>genome</dt><dd><samp>MN908947.3</samp></dd>
+        <dt>fasta</dt><dd><samp>https://github.com/artic-network/artic-ncov2019/raw/master/primer_schemes/nCoV-2019/V3/nCoV-2019.reference.fasta</samp></dd>
+        <dt>gff</dt><dd><samp>https://github.com/nf-core/test-datasets/raw/viralrecon/genome/MN908947.3/GCA_009858895.3_ASM985889v3_genomic.200409.gff.gz</samp></dd>
+        <dt>primer_bed</dt><dd><samp>https://github.com/artic-network/artic-ncov2019/raw/master/primer_schemes/nCoV-2019/V3/nCoV-2019.primer.bed</samp></dd>
+        <dt>primer_set</dt><dd><samp>artic</samp></dd>
+        <dt>primer_set_version</dt><dd><samp>3</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Nanopore/Illumina options</b></p>
+    <dl class="dl-horizontal">
+        <dt>nextclade_dataset</dt><dd><samp>https://github.com/nf-core/test-datasets/raw/viralrecon/genome/MN908947.3/nextclade_sars-cov-2_MN908947_2022-06-14T12_00_00Z.tar.gz</samp></dd>
+        <dt>nextclade_dataset_name</dt><dd><samp>sars-cov-2</samp></dd>
+        <dt>nextclade_dataset_tag</dt><dd><samp>2022-06-14T12:00:00Z</samp></dd>
+        <dt>skip_pangolin</dt><dd><samp>true</samp></dd>
+        <dt>skip_nextclade</dt><dd><samp>true</samp></dd>
+        <dt>skip_asciigenome</dt><dd><samp>true</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Illumina QC, read trimming and filtering options</b></p>
+    <dl class="dl-horizontal">
+        <dt>skip_kraken2</dt><dd><samp>true</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Illumina de novo assembly options</b></p>
+    <dl class="dl-horizontal">
+        <dt>skip_assembly</dt><dd><samp>true</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Max job request options</b></p>
+    <dl class="dl-horizontal">
+        <dt>max_cpus</dt><dd><samp>2</samp></dd>
+        <dt>max_memory</dt><dd><samp>8.GB</samp></dd>
+    </dl>
