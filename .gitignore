@@ -68,22 +68,19 @@ anaconda/
 *.sa
 
 # Quality control and report outputs
-*.fastqc.html
+# Quality control and report outputs
+# Keep specific report files tracked (e.g. multiqc and pipeline summaries) but
+# ignore heavy generated report directories and raw log folders.
 *.fastqc.zip
-*.multiqc.html
-multiqc_report.html
 multiqc_data/
-*.html
-*.json
-*.log
 logs/
 
-# Generic tabular/text outputs from pipelines
-*.csv
-*.tsv
-*.txt
-*.bed
-*.wig
+# Ignore generic logs and intermediate pipeline/work directories
+.nextflow/
+work/
+results/
+
+# Generic large binary/tabular outputs (still tracked if explicitly unignored below)
 *.bigwig
 *.bw
 *.bedgraph
@@ -100,3 +97,12 @@ logs/
 !*.py
 !*.yml
 !*.yaml
+
+# Explicitly allow these small, important repository files to be committed
+!samplesheet.csv
+!samples.txt
+!multiqc_report.html
+!README.md
+!workflow\ commands.sh
+!html.zip
+!*.html.zip
